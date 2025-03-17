@@ -1,0 +1,1 @@
+JMH S 71 com.altech.electronic_store.performance.BasketOperationsPerformanceTest S 115 com.altech.electronic_store.performance.jmh_generated.BasketOperationsPerformanceTest_measureBasketCreation_jmhTest S 21 measureBasketCreation S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 

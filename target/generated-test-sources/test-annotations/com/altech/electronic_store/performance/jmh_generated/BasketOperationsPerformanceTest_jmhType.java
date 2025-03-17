@@ -1,0 +1,4 @@
+package com.altech.electronic_store.performance.jmh_generated;
+public class BasketOperationsPerformanceTest_jmhType extends BasketOperationsPerformanceTest_jmhType_B3 {
+}
+

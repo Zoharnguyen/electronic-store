@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d72bd127-70de-4b67-8077-8e405fad9955" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2uNg6ukrhIfm9yYdOnaZ7N1LREd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ElectronicStoreApplication.executor": "Run",
+    "JUnit.ApiFlowIntegrationTest.executor": "Run",
+    "JUnit.ApiFlowIntegrationTest.testDiscountManagement.executor": "Run",
+    "JUnit.ApiFlowIntegrationTest.testProductManagement.executor": "Run",
+    "JUnit.java in electronic-store.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/trungquang/Desktop/2025/analysis/Common/Jobs/altech-zalo/projects/electronic-store",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.java in electronic-store">
+    <configuration name="ElectronicStoreApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.altech.electronic_store.ElectronicStoreApplication" />
+      <module name="electronic-store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.altech.electronic_store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiFlowIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="electronic-store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.altech.electronic_store.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.altech.electronic_store.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.altech.electronic_store.integration.ApiFlowIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiFlowIntegrationTest.testDiscountManagement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="electronic-store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.altech.electronic_store.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.altech.electronic_store.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.altech.electronic_store.integration.ApiFlowIntegrationTest" />
+      <option name="METHOD_NAME" value="testDiscountManagement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiFlowIntegrationTest.testProductManagement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="electronic-store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.altech.electronic_store.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.altech.electronic_store.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.altech.electronic_store.integration.ApiFlowIntegrationTest" />
+      <option name="METHOD_NAME" value="testProductManagement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in electronic-store" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="electronic-store" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.java in electronic-store" />
+        <item itemvalue="Application.ElectronicStoreApplication" />
+        <item itemvalue="JUnit.ApiFlowIntegrationTest.testDiscountManagement" />
+        <item itemvalue="JUnit.ApiFlowIntegrationTest.testProductManagement" />
+        <item itemvalue="JUnit.ApiFlowIntegrationTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-3183f394aec4-fdae186d" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d72bd127-70de-4b67-8077-8e405fad9955" name="Changes" comment="" />
+      <created>1742094275297</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742094275297</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+META-INF/CompilerHints
+com/altech/electronic_store/service/ProductServiceTest.class
+com/altech/electronic_store/service/ConcurrentBasketOperationsTest.class
+com/altech/electronic_store/service/BasketServiceTest.class
+com/altech/electronic_store/performance/BasketOperationsPerformanceTest.class
+com/altech/electronic_store/performance/jmh_generated/BasketOperationsPerformanceTest_jmhType_B2.class
+com/altech/electronic_store/security/SecurityConfigTest.class
+com/altech/electronic_store/performance/jmh_generated/BasketOperationsPerformanceTest_jmhType_B3.class
+com/altech/electronic_store/performance/jmh_generated/BasketOperationsPerformanceTest_measureBasketCreation_jmhTest.class
+META-INF/BenchmarkList
+com/altech/electronic_store/performance/jmh_generated/BasketOperationsPerformanceTest_jmhType.class
+com/altech/electronic_store/ElectronicStoreApplicationTests.class
+com/altech/electronic_store/performance/jmh_generated/BasketOperationsPerformanceTest_jmhType_B1.class
