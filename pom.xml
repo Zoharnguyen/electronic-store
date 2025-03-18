@@ -139,20 +139,12 @@
 
 	<repositories>
 		<repository>
-			<id>spring-releases</id>
-			<url>https://repo.spring.io/release</url>
-		</repository>
-		<repository>
 			<id>central</id>
 			<url>https://repo.maven.apache.org/maven2</url>
 		</repository>
 	</repositories>
 
 	<pluginRepositories>
-		<pluginRepository>
-			<id>spring-releases</id>
-			<url>https://repo.spring.io/release</url>
-		</pluginRepository>
 		<pluginRepository>
 			<id>central</id>
 			<url>https://repo.maven.apache.org/maven2</url>
