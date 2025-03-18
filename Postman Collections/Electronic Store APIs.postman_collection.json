@@ -50,7 +50,10 @@
 							"script": {
 								"exec": [
 									"var jsonData = pm.response.json();",
-									"pm.environment.set(\"authToken\", jsonData.token);"
+									"",
+									"pm.globals.set(\"authToken\", jsonData.token);",
+									"console.log(\"Global Token set:\", jsonData.token);",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -66,12 +69,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"testuser\",\n    \"password\": \"password123\"\n}"
+							"raw": "{\n    \"username\": \"testadmin1\",\n    \"password\": \"password123\"\n}"
 						},
 						"url": {
-							"raw": "/api/v1/auth/login",
+							"raw": "localhost:8080/client-api/v1/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
 							"path": [
-								"api",
+								"client-api",
 								"v1",
 								"auth",
 								"login"
@@ -88,13 +95,28 @@
 			"item": [
 				{
 					"name": "Create Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.globals.set(\"productId\", jsonData.id);",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0YWRtaW4xIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE3NDIxNjcyMDIsImV4cCI6MTc0MjI1MzYwMn0.j6XW5875moZL_9MJl-3aVNAgGmV3ryM_Je9wPcpMZ_F-kAb1Kc7yPK1dpqAHu72Q3SJvaHPeTTgZTnq1b3CANg",
+									"value": "{{authToken}}",
 									"type": "string"
 								}
 							]
@@ -111,13 +133,13 @@
 							"raw": "{\n    \"name\": \"Laptop\",\n    \"description\": \"High-end laptop\",\n    \"price\": 999.99,\n    \"stockQuantity\": 10\n}"
 						},
 						"url": {
-							"raw": "localhost:8080/api/v1/products",
+							"raw": "localhost:8080/client-api/v1/products",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"api",
+								"client-api",
 								"v1",
 								"products"
 							]
@@ -128,12 +150,26 @@
 				{
 					"name": "Get Product",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authToken}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "/api/v1/products/{{productId}}",
+							"raw": "localhost:8080/client-api/v1/products/{{productId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
 							"path": [
-								"api",
+								"client-api",
 								"v1",
 								"products",
 								"{{productId}}"
@@ -158,9 +194,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "/api/v1/products/{{productId}}",
+							"raw": "localhost:8080/client-api/v1/products/{{productId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
 							"path": [
-								"api",
+								"client-api",
 								"v1",
 								"products",
 								"{{productId}}"
@@ -176,6 +216,21 @@
 			"item": [
 				{
 					"name": "Create Discount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.globals.set(\"discountId\", jsonData.id);",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -196,12 +251,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"productId\": 1,\n    \"minimumQuantity\": 2,\n    \"discountPercentage\": 10.00,\n    \"description\": \"10% off on 2 or more items\"\n}"
+							"raw": "{\n    \"productId\": {{productId}},\n    \"minimumQuantity\": 2,\n    \"discountPercentage\": 10.00,\n    \"description\": \"10% off on 2 or more items\"\n}"
 						},
 						"url": {
-							"raw": "/api/v1/discounts",
+							"raw": "localhost:8080/client-api/v1/discounts",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
 							"path": [
-								"api",
+								"client-api",
 								"v1",
 								"discounts"
 							]
@@ -212,12 +271,26 @@
 				{
 					"name": "Get Product Discounts",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authToken}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "/api/v1/discounts/product/{{productId}}",
+							"raw": "localhost:8080/client-api/v1/discounts/product/{{productId}}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
 							"path": [
-								"api",
+								"client-api",
 								"v1",
 								"discounts",
 								"product",
@@ -234,13 +307,40 @@
 			"item": [
 				{
 					"name": "Create Basket",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.globals.set(\"basketId\", jsonData.id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authToken}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "/api/v1/baskets",
+							"raw": "localhost:8080/client-api/v1/baskets",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
 							"path": [
-								"api",
+								"client-api",
 								"v1",
 								"baskets"
 							]
@@ -251,6 +351,16 @@
 				{
 					"name": "Add Item to Basket",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{authToken}}",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -260,12 +370,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"productId\": 1,\n    \"quantity\": 2\n}"
+							"raw": "{\n    \"productId\": {{productId}},\n    \"quantity\": 2\n}"
 						},
 						"url": {
-							"raw": "/api/v1/baskets/{{basketId}}/items",
+							"raw": "localhost:8080/client-api/v1/baskets/{{basketId}}/items",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
 							"path": [
-								"api",
+								"client-api",
 								"v1",
 								"baskets",
 								"{{basketId}}",
